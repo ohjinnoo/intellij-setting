@@ -1,0 +1,15 @@
+<templateSet group="ju">
+  <template name="ju" value="/**&#10;&#9; * 동작&#10;&#9; * @param&#10;&#9; * @return&#10;&#9; * @throws&#10;&#9; */" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ls" value="&#10;/**&#10;&#10;  * @FileName : $file_name$&#10;&#10;  * @Date : $date$&#10;&#10;  * @작성자 : $user$&#10;&#10;  * @변경이력 :&#10;&#10;  * @프로그램 설명 :&#10;&#10;  */" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="file_name" expression="fileName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="user" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
